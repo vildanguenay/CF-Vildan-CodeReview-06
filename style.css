@@ -1,0 +1,59 @@
+html {
+    background-color: rgba(255, 240, 241, 0.37);
+}
+body {
+    width: 600px;
+    margin: 0 auto; 
+}
+header {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    border-bottom: 2px solid darkgrey;
+}
+.mainWrapper {
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.inputWrapper {
+    display: flex;  
+    margin: 0 2rem; 
+}
+.counterHeader {
+    align-items: flex-start;
+}
+.inputBox {
+    width: 80%;
+    margin: 0;
+}
+.addBtn {
+    margin: 0;
+    width: 20%;
+    padding: 0;
+    border: none;
+}
+.tasks {
+    display: flex;
+    margin-bottom: 0.5rem;
+    border-radius: 10%;
+    background-color: darksalmon;
+}
+.description {
+    width: 95%;
+    padding-left: 1rem;
+}
+.checkmark,
+.cross {
+    border-radius: 40%;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-right: 0.3rem;
+    background-color: antiquewhite;
+    border: none;
+}
+.checkmark {
+    margin-right: 0.3rem;
+}

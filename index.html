@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>YOUR TO-DO LIST</title>
 </head>
 <body>
-    
+    <header>TO-DO LIST</header>
+    <main>
+        <div class="mainWrapper">
+            <div class="inputWrapper">
+                <input class="inputBox" type="text" value="" placeholder="Task description..." />
+                <button class="addBtn">Add task</button>
+            </div>
+          
+            <p class="counterHeader">Tasks: <span id="counter">0</span></p>
+                           
+            <div id="tasksWrapper">
+            </div>
+        </div>
+    </main>
+    <script src="js/myscript.js"></script>
 </body>
 </html>

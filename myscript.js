@@ -21,13 +21,13 @@ $(document).ready(function () {
     function increment() {
         number++;
         id++;
-        // send new number + id number to the html for the upsoming task
+        // send new number + id to html for the upcoming task
         $("#counter").html(number);
     }
 
     function decrement() {
         number--;
-        // send new number to the html 
+        // send new number to html 
         $("#counter").html(number);
         // this function is only called in conjunction with removeTask function 
     }
@@ -35,7 +35,7 @@ $(document).ready(function () {
     function addCheckMarkEvent() {
         // id necessary to specify the clicked btn or task 
         $(`#todoId${id}`).find('.checkmark').click(function (){
-            // this refers to the button -> target its parent to change the background of the whole task 
+            // "this" refers to the button -> target its parent to change the background of the whole task 
             $(this).parent("div").css("background-color", "#e9967a4a");
             $(this).hide(1000);
         })

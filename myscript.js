@@ -21,15 +21,8 @@ $(document).ready(function () {
     function increment() {
         number++;
         id++;
-        // send new number + id to html for the upcoming task
+        // send new number to html for the upcoming task
         $("#counter").html(number);
-    }
-
-    function decrement() {
-        number--;
-        // send new number to html 
-        $("#counter").html(number);
-        // this function is only called in conjunction with removeTask function 
     }
 
     function addCheckMarkEvent() {
@@ -48,6 +41,13 @@ $(document).ready(function () {
             // call noTasks after all tasks have been removed
             noTasks();
         });
+    }
+
+    function decrement() {
+        number--;
+        // send new number to html 
+        $("#counter").html(number);
+        // this function is only called in conjunction with removeTask function 
     }
 
     function noTasks() {
